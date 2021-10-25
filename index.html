@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://vnmm.dev/style.css">
+    <title>vnmm</title>
+    <style>
+        @font-face {
+            font-family: hhhh;
+            src: url("pogfont.otf") format("opentype");
+        }
+
+        h1 {
+            font-family: 'hhhh';
+            font-size: 120px;
+            color:transparent;
+            display: block;
+            text-align: center;
+            background: #44a3e7;
+            background-image: linear-gradient(to right, #bb00dd, #44a3e7, #bb00dd, #44a3e7);
+            background-size: 300%;
+            background-clip: text;
+            box-sizing: border-box;
+            background-repeat: repeat;
+            animation: gradient 7.5s linear infinite;
+            padding-bottom: 5px;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        main > a {
+            text-decoration: none;
+            color: #44a3e7 !important;
+            display: inline-block;
+            padding: 1%;
+            border: 2px solid transparent;
+            border-image: linear-gradient(to bottom right, #bb00dd, #44a3e7);
+            border-image-slice: 1;
+            margin: 2%;
+            margin-left: auto;
+            margin-right: auto;
+            width: max-content;
+            transition-duration: 0.3s;
+            text-align: center;
+        }
+
+        main > a:hover {
+            box-shadow: -2px -2px 5px 1px #8c54fe, 2px 2px 5px 1px #0066cc;
+        }
+
+        main > a img {
+            display: block;
+            padding: 5%;
+            width: max(188px, 11vw);
+        }
+
+        p {
+            margin: auto;
+            text-align: center;
+            width: 50%;
+            line-height: 1.25;
+            padding: 10px;
+        }
+
+        h4 {
+            margin: auto;
+            text-align: center;
+        }
+
+        hr {
+            border: 1px solid #ee0061;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0%;
+            }
+
+            100% {
+                background-position: 100%;
+            }
+            
+        }
+
+        @media only screen and (max-width: 768px) {
+            main {
+                display: block;
+            }
+
+            main a {
+                display: block;
+                width: max-content;
+            }
+
+            main a img {
+                width: 60vw;
+            }
+
+            p { 
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>
+        Venom
+    </h1>
+    <hr />
+    <main>
+        <a href="https://hyarcade.xyz">
+            <img src="https://hyarcade.xyz/assets/arcadepfp2.png">
+            HyArcade
+        </a>
+        <a href="https://vnmm.dev/links.html">
+            <img src="https://i.vnmm.dev/v.png">
+            Find Me
+        </a>
+        <a href="https://github.com/eatmyvenom">
+            <img src="https://i.vnmm.dev/GitHub-Mark-Light-120px-plus.png">
+            GitHub
+        </a>
+    </main>
+
+    <h4>About me</h4>
+    <p>
+        Hi there I am venom, or at least thats what people call me. In case you are wondering, my real name is Jacob but I perfer not to be called that online.
+
+        <br /><br />
+        I am a part time worker, part time student, part time developer, part time hypixel sweat. If you want to find me anywhere go look at the
+        "Find Me" link above.
+
+        <br /><br />
+        I recently have had the HyArcade project as my main time spender for developing work, I am always open to help if literally anybody wants to.
+        I maintain the discord bot and website for this whole project. If you have any questions about using any of it, ping me on discord.
+
+        <br /><br />
+        In minecraft I play usually on a custom forge client using labymod and some custom mods for party games and hypixel. If I am not using that I
+        usually am on lunar client.
+    </p>
+</body>
+</html>
